@@ -37,3 +37,6 @@ class Player(CircleShape):
             self.move(PLAYER_SPEED, dt)
         if keys[pygame.K_s]:
             self.move(PLAYER_SPEED, inversed_dt)
+
+    def collision(self, circle):
+        super().collision(circle)
